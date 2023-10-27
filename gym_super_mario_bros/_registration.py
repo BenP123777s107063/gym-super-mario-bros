@@ -2,7 +2,7 @@
 import gym
 
 
-def _register_mario_env(id, is_random=False, **kwargs):
+def _register_mario_env(idz, is_random=False, **kwargs):
     """
     Register a Super Mario Bros. (1/2) environment with OpenAI Gym.
 
@@ -24,7 +24,7 @@ def _register_mario_env(id, is_random=False, **kwargs):
         entry_point = 'gym_super_mario_bros:SuperMarioBrosEnv'
     # register the environment
     gym.envs.registration.register(
-        id=id,
+        id=idz,
         entry_point=entry_point,
         max_episode_steps=9999999,
         reward_threshold=9999999,
@@ -52,7 +52,7 @@ _register_mario_env('SuperMarioBros2-v0', lost_levels=True, rom_mode='vanilla')
 _register_mario_env('SuperMarioBros2-v1', lost_levels=True, rom_mode='downsample')
 
 
-def _register_mario_stage_env(id, **kwargs):
+def _register_mario_stage_env(idz, **kwargs):
     """
     Register a Super Mario Bros. (1/2) stage environment with OpenAI Gym.
 
@@ -66,7 +66,7 @@ def _register_mario_stage_env(id, **kwargs):
     """
     # register the environment
     gym.envs.registration.register(
-        id=id,
+        id=idz,
         entry_point='gym_super_mario_bros:SuperMarioBrosEnv',
         max_episode_steps=9999999,
         reward_threshold=9999999,

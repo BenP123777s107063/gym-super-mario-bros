@@ -3,15 +3,13 @@ from setuptools import setup, find_packages
 
 
 # read the contents of the README
-with open('README.md') as README_md:
-    README = README_md.read()
+
 
 
 setup(
     name='gym_super_mario_bros',
     version='7.4.0',
     description='Super Mario Bros. for OpenAI Gym',
-    long_description=README,
     long_description_content_type='text/markdown',
     keywords=' '.join([
         'OpenAI-Gym',
