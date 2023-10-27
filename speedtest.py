@@ -4,7 +4,7 @@ from gym_super_mario_bros import SuperMarioBrosEnv
 
 env = SuperMarioBrosEnv()
 
-Done = True
+DONE = True
 
 try:
     for _ in tqdm.tqdm(range(5000)):
